@@ -1,0 +1,67 @@
+\documentclass{acm_proc_article-sp}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+
+\begin{document}
+
+\title{A Comparison of Scheduling Algorithms}
+\numberofauthors{1}
+\author{
+\alignauthor
+Samuel Jackson\\
+       \affaddr{Aberystwyth University}\\
+       \email{slj11@aber.ac.uk}
+}
+\date{\today}
+
+\maketitle
+\begin{abstract}
+
+\end{abstract}
+
+% A category with the (minimum) three required fields
+\category{D.4}{Operating Systems}{Process Management}[Scheduling]
+%A category including the fourth, optional field follows...
+\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+\terms{Algorithms, Performance, Measurement}
+
+\keywords{Algorithms, Scheduling, Performance, Lottery Scheduling, Shortest Job Next, Round Robin}
+
+\section{Introduction}
+This report aims to examine the differences between three approaches to scheduling algorithms that are widely used in systems throughout computer science where multiple tasks require computation in parallel. Scheduling algorithms are used to organise and prioritise jobs of computation according to a set scheme which deals with the issues such as throughput, turnaround and context switches.
+
+The scheduling algorithms used here are Shortest Job Next (SJN), round robin and lottery scheduling which were chosen because they all exhibit characteristics which make them suitable in different situations. The former two are deterministic in nature while lottery scheduling is non deterministic. SJN takes a simple queue based approach, while round robin uses time slices to share processing time. Lottery scheduling uses probabilistic methods to give higher priority jobs a greater likelihood of being selected.
+
+\section{Methodology} 
+\label{methodology}
+To thoroughly test the performance of the algorithms, each of the schedulers was exercised using a set of data files each of which test different properties important to scheduling algorithms. This includes files which contain a heavy amount of I/O processing, a low level of I/O processing, jobs where all priorities are the same, and some general test data. Test data that is heavy in I/O processes exercises how well an algorithm handles a high level of context switching due to jobs being blocked for reading or writing. The data file with a low level of I/O is used to evaluate the performance of the scheduler in situations which would not require I/O. A file where all priorities are the same is used to help evaluate lottery scheduling (which schedules according to priority) to evaluate its worst case performance.
+
+Th method used to test each algorithm was to run it with each of the supplied generic data files and to also test it with the custom data files to evaluate how each algorithm handles specific aspects of scheduling. I then compared each of the results against one another in order to show how each algorithm performed both with generic test data and specific test data to gain an idea of how well each performed both generally and within a specific area of performance.
+
+Because lottery scheduling is non-deterministic it required a different approach to testing that involved an extra step. Lottery scheduling gives different results on each run, therefore in order to evaluate an average run an automated simulator was created to simulate 10,000 runs of the algorithm per test file. The results of this data could then be averaged out to representatively compare lottery scheduling's general case performance with the performance of the other algorithms.
+
+\section{Results}
+This section details the outcomes of testing each of the algorithms the data files outlined in section \ref{methodology}.
+
+\subsection{Shortest Job Next Scheduling}
+Shortest Job Next (SJN) scheduling uses a queue data structure to elements jobs to be processed. Newly jobs are inserted into the queue according to the length of the job ensuring that the shortest job is always presented at the start of the queue.
+
+
+
+\subsection{Round Robin Scheduling}
+
+\subsection{Lottery Scheduling}
+
+\section{Conclusions}
+
+\section{Acknowledgments}
+The author wishes to thank Richard Shipman (rcs@aber.ac.uk) for providing the supporting simulation code and GUI.
+
+\bibliographystyle{abbrv}
+\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography 
+\appendix
+\subsection{References}
+\balancecolumns
+\end{document}

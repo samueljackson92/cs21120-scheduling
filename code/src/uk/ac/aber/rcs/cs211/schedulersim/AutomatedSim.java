@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Date;
 
 import uk.ac.aber.rcs.cs211.schedulersim.scheduler.LotteryScheduler;
 
@@ -16,10 +17,17 @@ public class AutomatedSim {
 	StringBuffer retval;
 	
 	public AutomatedSim() {
-		int sampleSize = 1000;
+		int sampleSize = 10000;
 		filename = "src/Test.jobs";
 		retval = new StringBuffer();
-
+		
+		retval.append("# Automated Results file");
+		retval.append("\n# Author: \t slj11");
+		retval.append("\n# DataFile name:\t");
+		retval.append(filename);
+		retval.append("\n# " + new Date(System.currentTimeMillis()).toString());
+		retval.append("\n# Number of Test Runs: " + sampleSize + "\n\n");
+		
 		for(int i =0; i<sampleSize; i++) {
 			ArrayList<Job> waitQueue = new ArrayList<Job>();
 			

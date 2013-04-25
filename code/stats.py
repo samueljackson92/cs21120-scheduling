@@ -21,7 +21,7 @@ fname = args.file[0]
 
 #load data from CSV file.
 try:
-	dat = np.loadtxt(fname, delimiter=",")
+	dat = np.loadtxt(fname, delimiter=",", comments='#')
 except Exception, e:
 	print "Exception: ", e
 	exit(-1)
@@ -33,26 +33,17 @@ meanCPUTime = 0
 meanContextSwitches = 0
 meanIdleTime = 0
 
-duration = []
-cputime = []
-contextSwitches = []
-idleTime = []
+flatdat = [item for sublist in dat for item in sublist]
 
-for sublist in dat:
-	meandur = meandur + sublist[0]
-	duration.append(sublist[0])
-	meanCPUTime = meanCPUTime + sublist[1]
-	cputime.append(sublist[1])
-	meanContextSwitches = meanContextSwitches + sublist[2]
-	contextSwitches.append(sublist[2])
-	meanIdleTime = meanIdleTime + sublist[3]
-	idleTime.append(sublist[3])
+duration = flatdat[::4]
+cputime = flatdat[1::4]
+contextSwitches = flatdat[2::4]
+idleTime = flatdat[3::4]
 
-
-meandur = meandur / numTests
-meanCPUTime = meanCPUTime / numTests
-meanIdleTime = meanIdleTime /numTests
-meanContextSwitches = meanContextSwitches / numTests
+meandur = sum(duration) / numTests
+meanCPUTime = sum(cputime) / numTests
+meanIdleTime = sum(idleTime) / numTests
+meanContextSwitches = sum(contextSwitches) / numTests
 
 def histo(data, title, subtitle):
 	hist, bins = np.histogram(data, bins=(max(data)+1 - min(data)), range=(min(data), max(data)+1))
@@ -61,6 +52,7 @@ def histo(data, title, subtitle):
 
 	fig = plt.figure()
 	ax = fig.add_subplot(111)
+	center = (data[:-1]+data[1:])/2
 	ax.bar(center, hist, align = 'center', width = width)
 
 	ax.set_xlabel(title)

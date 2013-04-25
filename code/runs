@@ -1,0 +1,53 @@
+# Saved data from Deterministic runs
+
+Simulator run Thu Apr 25 20:01:29 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/bin/Test.jobs
+CPU1:2	11
+CPU2:1	24
+MIXED1:2	44
+CPU3:2	61
+IO1:3	81
+Mean elapsed duration	44
+Total CPU time	81
+Total Context Switches	12
+Total Idle time	12
+
+Simulator run Thu Apr 25 20:12:35 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/bin/Test.jobs
+CPU1:2	48
+CPU2:1	53
+IO1:3	64
+MIXED1:2	67
+CPU3:2	69
+Mean elapsed duration	60
+Total CPU time	69
+Total Context Switches	68
+Total Idle time	0
+
+Simulator run Thu Apr 25 20:13:06 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.LotteryScheduler
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/bin/Test.jobs
+CPU2:1	43
+CPU1:2	54
+MIXED1:2	61
+CPU3:2	63
+IO1:3	75
+Mean elapsed duration	59
+Total CPU time	75
+Total Context Switches	45
+Total Idle time	6
+
+Simulator run Thu Apr 25 20:13:30 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/bin/Test.jobs
+CPU2:1	13
+CPU1:2	37
+CPU3:2	56
+MIXED1:2	63
+IO1:3	75
+Mean elapsed duration	48
+Total CPU time	75
+Total Context Switches	10
+Total Idle time	6
