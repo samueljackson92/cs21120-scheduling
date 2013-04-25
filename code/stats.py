@@ -52,7 +52,6 @@ def histo(data, title, subtitle):
 
 	fig = plt.figure()
 	ax = fig.add_subplot(111)
-	center = (data[:-1]+data[1:])/2
 	ax.bar(center, hist, align = 'center', width = width)
 
 	ax.set_xlabel(title)
@@ -64,7 +63,7 @@ def histo(data, title, subtitle):
 
 	plt.show()
 
-print "Mean Total: ", meandur
+print "Mean Total Duration: ", meandur
 histo(duration, 'Total Duration', 'Mean Total Duration')
 
 print "Mean CPU Time: ", meanCPUTime
