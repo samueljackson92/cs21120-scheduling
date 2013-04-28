@@ -12,6 +12,7 @@ from argparse import ArgumentParser
 import matplotlib.pyplot as plt
 from matplotlib import ticker
 import numpy as np
+import re
 
 #Parse command line options for filename
 parser = ArgumentParser(description="Statistical analysis tool.")
@@ -35,11 +36,13 @@ meanIdleTime = 0
 
 flatdat = [item for sublist in dat for item in sublist]
 
-duration = flatdat[::4]
-cputime = flatdat[1::4]
-contextSwitches = flatdat[2::4]
-idleTime = flatdat[3::4]
+fstJob = flatdat[::5]
+duration = flatdat[1::5]
+cputime = flatdat[2::5]
+contextSwitches = flatdat[3::5]
+idleTime = flatdat[4::5]
 
+meanFstTime = sum(fstJob) / numTests
 meandur = sum(duration) / numTests
 meanCPUTime = sum(cputime) / numTests
 meanIdleTime = sum(idleTime) / numTests
@@ -63,14 +66,18 @@ def histo(data, title, subtitle):
 
 	plt.show()
 
+
+print "Average First Job Finishing Time: ", meanFstTime
+
 print "Mean Total Duration: ", meandur
-histo(duration, 'Total Duration', 'Mean Total Duration')
+#histo(duration, 'Total Duration', 'Mean Total Duration')
+
 
 print "Mean CPU Time: ", meanCPUTime
-histo(cputime, 'CPU Time', 'Total CPU Time')
+#histo(cputime, 'CPU Time', 'Total CPU Time')
 
 print "Mean Context Switches: ", meanContextSwitches
-histo(contextSwitches,'Context Switches', 'Total Context Switches')
+#histo(contextSwitches,'Context Switches', 'Total Context Switches')
 
 print "Mean Idle Time: ", meanIdleTime
-histo(idleTime,'Idle Time','Total Idle Time')
+#histo(idleTime,'Idle Time','Total Idle Time')

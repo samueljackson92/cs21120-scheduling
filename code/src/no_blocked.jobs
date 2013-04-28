@@ -1,11 +1,11 @@
 # file for Scheduler simulator
-# Includes a high number blocked cycles
+# Includes no I/O blocking, but lots of CPU cycles
 # Modified from Test.jobs
 # Author: slj11
 # process name:priority;start time;cycles on cpu, cycles blocked, cycles on cpu...
 CPU1:2;4;10
-CPU2:1;0;12
-MIXED1:2;0;5,14,2,15,6
-IO1:3;0;1,11,2,18,1,13,3
-CPU3:2;0;8,15,8
+CPU2:1;0;25
+MIXED1:2;0;20
+IO1:3;0;20
+CPU3:2;0;30
 

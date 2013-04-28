@@ -1,0 +1,314 @@
+# Saved data from test runs
+
+##################################################################################
+# Test.jobs
+##################################################################################
+
+Simulator run Sat Apr 27 17:01:55 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test.jobs
+CPU1:2	11
+CPU2:1	24
+MIXED1:2	44
+CPU3:2	64
+IO1:3	77
+Mean elapsed duration	44
+Total CPU time	77
+Total Context Switches	14
+Total Idle time	8
+
+Simulator run Thu Apr 25 20:12:35 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/bin/Test.jobs
+CPU1:2	48
+CPU2:1	53
+IO1:3	64
+MIXED1:2	67
+CPU3:2	69
+Mean elapsed duration	60
+Total CPU time	69
+Total Context Switches	68
+Total Idle time	0
+
+Simulator run Thu Apr 25 20:13:30 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/bin/Test.jobs
+CPU2:1	13
+CPU1:2	37
+CPU3:2	56
+MIXED1:2	63
+IO1:3	75
+Mean elapsed duration	48
+Total CPU time	75
+Total Context Switches	10
+Total Idle time	6
+
+Lottery Scheduling:
+Average First Job Finishing Time:  37.3631
+Mean Total Duration:  55.355
+Mean CPU Time:  72.1559
+Mean Context Switches:  48.452
+Mean Idle Time:  3.1559
+
+
+##################################################################################
+# Test2.jobs
+##################################################################################
+Simulator run Sat Apr 27 17:02:19 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test2.jobs
+INTER:1	15
+CPU1:3	20
+MIXED1:1	43
+INTER2:3	65
+IO1:3	79
+Mean elapsed duration	44
+Total CPU time	79
+Total Context Switches	20
+Total Idle time	10
+
+Simulator run Sat Apr 27 13:00:32 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test2.jobs
+CPU1:3	48
+INTER:1	54
+IO1:3	62
+MIXED1:1	63
+INTER2:3	69
+Mean elapsed duration	59
+Total CPU time	69
+Total Context Switches	64
+Total Idle time	0
+
+Simulator run Sat Apr 27 13:00:05 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test2.jobs
+CPU1:3	24
+MIXED1:1	53
+INTER2:3	62
+INTER:1	65
+IO1:3	69
+Mean elapsed duration	54
+Total CPU time	69
+Total Context Switches	15
+Total Idle time	0
+
+Lottery Scheduling:
+Average First Job Finishing Time:  35.0107
+Mean Total Duration:  52.7214
+Mean CPU Time:  70.7239
+Mean Context Switches:  46.5125
+Mean Idle Time:  1.7239
+
+
+##################################################################################
+# Test3.jobs
+##################################################################################
+Simulator run Sat Apr 27 17:03:21 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test3.jobs
+INTER:1	15
+MIXED1:2	32
+CPU3:2	34
+IO1:1	81
+INTER2:1	83
+CPU2:3	107
+IO2:3	142
+INTER3:3	147
+CPU1:2	178
+Mean elapsed duration	91
+Total CPU time	182
+Total Context Switches	43
+Total Idle time	0
+
+Simulator run Sat Apr 27 13:01:41 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test3.jobs
+INTER:1	92
+IO1:1	100
+MIXED1:2	115
+INTER3:3	121
+INTER2:1	137
+CPU3:2	140
+IO2:3	146
+CPU2:3	168
+CPU1:2	178
+Mean elapsed duration	133
+Total CPU time	182
+Total Context Switches	172
+Total Idle time	0
+
+Simulator run Sat Apr 27 13:02:09 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test3.jobs
+CPU2:3	42
+CPU1:2	85
+CPU3:2	103
+MIXED1:2	142
+INTER2:1	158
+INTER:1	161
+IO1:1	171
+IO2:3	170
+INTER3:3	181
+Mean elapsed duration	134
+Total CPU time	191
+Total Context Switches	26
+Total Idle time	9
+
+Lottery Scheduling:
+Average First Job Finishing Time:  59.3119
+Mean Total Duration:  122.6082
+Mean CPU Time:  182.4428
+Mean Context Switches:  140.8237
+Mean Idle Time:  0.4428
+
+
+##################################################################################
+# same_priority.jobs
+##################################################################################
+Simulator run Sat Apr 27 17:04:04 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/same_priority.jobs
+CPU1:1	11
+CPU2:1	24
+MIXED1:1	44
+CPU3:1	64
+IO1:1	77
+Mean elapsed duration	44
+Total CPU time	77
+Total Context Switches	14
+Total Idle time	8
+
+Simulator run Sat Apr 27 13:10:22 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/same_priority.jobs
+CPU1:1	48
+CPU2:1	53
+IO1:1	64
+MIXED1:1	67
+CPU3:1	69
+Mean elapsed duration	60
+Total CPU time	69
+Total Context Switches	68
+Total Idle time	0
+
+Simulator run Sat Apr 27 13:10:50 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/same_priority.jobs
+CPU2:1	13
+CPU1:1	37
+CPU3:1	56
+MIXED1:1	63
+IO1:1	75
+Mean elapsed duration	48
+Total CPU time	75
+Total Context Switches	10
+Total Idle time	6
+
+Lottery Scheduling:
+Average First Job Finishing Time:  44.201
+Mean Total Duration:  57.3252
+Mean CPU Time:  69.3116
+Mean Context Switches:  51.508
+Mean Idle Time:  0.3116
+
+
+
+##################################################################################
+# blocked.jobs
+##################################################################################
+Simulator run Sat Apr 27 17:04:28 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/blocked.jobs
+CPU1:2	11
+CPU2:1	24
+CPU3:2	60
+MIXED1:2	79
+IO1:3	101
+Mean elapsed duration	55
+Total CPU time	101
+Total Context Switches	12
+Total Idle time	32
+
+Simulator run Sat Apr 27 13:08:00 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/blocked.jobs
+CPU1:2	41
+CPU2:1	46
+CPU3:2	62
+MIXED1:2	72
+IO1:3	74
+Mean elapsed duration	59
+Total CPU time	74
+Total Context Switches	55
+Total Idle time	5
+
+Simulator run Sat Apr 27 13:09:03 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/blocked.jobs
+CPU2:1	13
+CPU1:2	37
+CPU3:2	56
+MIXED1:2	69
+IO1:3	88
+Mean elapsed duration	52
+Total CPU time	88
+Total Context Switches	10
+Total Idle time	19
+
+Lottery Scheduling:
+Average First Job Finishing Time:  34.351
+Mean Total Duration:  58.8188
+Mean CPU Time:  85.1865
+Mean Context Switches:  40.9425
+Mean Idle Time:  16.1865
+
+
+##################################################################################
+# no_blocked.jobs
+##################################################################################
+Simulator run Sat Apr 27 17:05:02 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/no_blocked.jobs
+CPU1:2	11
+MIXED1:2	33
+IO1:3	53
+CPU2:1	79
+CPU3:2	110
+Mean elapsed duration	57
+Total CPU time	110
+Total Context Switches	8
+Total Idle time	0
+
+Simulator run Sat Apr 27 13:05:01 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/no_blocked.jobs
+CPU1:2	55
+MIXED1:2	93
+IO1:3	94
+CPU2:1	104
+CPU3:2	110
+Mean elapsed duration	91
+Total CPU time	110
+Total Context Switches	105
+Total Idle time	0
+
+Simulator run Sat Apr 27 13:04:35 BST 2013
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
+DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/no_blocked.jobs
+CPU2:1	26
+MIXED1:2	47
+IO1:3	68
+CPU3:2	99
+CPU1:2	106
+Mean elapsed duration	69
+Total CPU time	110
+Total Context Switches	5
+Total Idle time	0
+
+Lottery Scheduling:
+Average First Job Finishing Time:  57.2704
+Mean Total Duration:  86.5511
+Mean CPU Time:  110.0
+Mean Context Switches:  75.5918
+Mean Idle Time:  0.0
