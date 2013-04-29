@@ -1,6 +1,7 @@
 package uk.ac.aber.rcs.cs211.schedulersim.scheduler;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import uk.ac.aber.rcs.cs211.schedulersim.AbstractScheduler;
 import uk.ac.aber.rcs.cs211.schedulersim.Job;
@@ -15,12 +16,18 @@ public class LotteryScheduler extends AbstractScheduler {
 	/**
 	 * The weights for each job in the queue
 	 */
-	ArrayList<Double> weights;
+	private ArrayList<Double> weights;
 	
 	/**
 	 * The current highest priority of a job in the queue
 	 */
-	int highestPriority = 0;
+	private int highestPriority = 0;
+	private long seed = 0;
+	
+	public LotteryScheduler(long seed) {
+		this();
+		this.seed = seed;
+	}
 	
 	public LotteryScheduler() {
 		super();
@@ -143,7 +150,8 @@ public class LotteryScheduler extends AbstractScheduler {
 	//Code taken from: http://stackoverflow.com/questions/6737283/weighted-randomness-in-java
 	private int pickSlot() {
 		int randomIndex = -1;
-		double random = Math.random();
+		Random rnd = (seed == 0) ? new Random() : new Random(seed);
+		double random = rnd.nextDouble();
 		for (int i = 0; i < numberOfJobs; ++i)
 		{
 		    random -= weights.get(i);

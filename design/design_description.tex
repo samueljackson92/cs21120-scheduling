@@ -10,7 +10,7 @@
 \setlength{\parindent}{0cm}}
 
 \begin{document}
-\title{Design Description}
+\title{Design}
 \author{Samuel Jackson \\ \texttt{slj11@aber.ac.uk}}
 \date{\today}
 \maketitle
@@ -37,7 +37,7 @@ $ShortestTimeRemaining$ contains the implementation of the shortest time remaini
 The $RoundRobin$ class has the simplest implementation of the three scheduling algorithms. It overrides the $returnJob$ method by removing the returned job from the front of the queue and placing at the back.
 
 \subsubsection{LotteryScheduler}
-In contrast with $RoundRobin$, $LotteryScheduler$ has a much more complex implementation. $LotteryScheduler$ overrides four of the methods from $AbstractScheduler$. This is because a random lottery much be performed both when a job is returned to the queue and when a new job is added. The $removeJob$ method must also be overridden because the corresponding weight associated with a job must also be removed at the same time. For similar reasons the $reset$ method has also been overridden.
+In contrast with $RoundRobin$, $LotteryScheduler$ has a much more complex implementation. This class provides two constructors: one used in actual scheduling and one which accepts a seed to be used on every invocation of $new Random()$. The second type is used for testing purposes. $LotteryScheduler$ overrides four of the methods from $AbstractScheduler$. This is because a random lottery much be performed both when a job is returned to the queue and when a new job is added. The $removeJob$ method must also be overridden because the corresponding weight associated with a job must also be removed at the same time. For similar reasons the $reset$ method has also been overridden.
 
-Additionally, this class also has several other methods to help with the running and maintenance of a random weighted lottery. The $lottery$ method selects a new job based on the weights and inserts it at the front of the queue. This method is called at both the $returnJob$ and $addNewJob$ methods. The $calcWeights$ method will iterate over each job in the queue and re-calculate the weight for the job based on its priority using the $calcWeight$ method. The $calcWeight$ method works on the basis that the lower the priority number, the greater importance the job has. The $highestPriority$ variable is used here to calculate the weighting. The $normalise$ method normalises the weights after a re-calculation to be within the range $0-1$. The $pickSlot$ method chooses a job based on the random weights and returns its index. Finally, $sum$ is a simple utility function to return the sum of all the numbers in an $ArrayList$
+Additionally, this class also has several other methods to help with the running and maintenance of a random weighted lottery. The $lottery$ method selects a new job based on the weights and inserts it at the front of the queue. This method is called at both the $returnJob$ and $addNewJob$ methods. The $calcWeights$ method will iterate over each job in the queue and re-calculate the weight for the job based on its priority using the $calcWeight$ method. The $calcWeight$ method works on the basis that the lower the priority number, the greater importance the job has. The $highestPriority$ variable is used here to calculate the weighting. The $normalise$ method normalises the weights after a re-calculation to be within the range $0-1$. The $pickSlot$ method chooses a job based on the random weights and returns its index. Finally, $sum$ is a simple utility function to return the sum of all the numbers in an $ArrayList$.
 \end{document}
