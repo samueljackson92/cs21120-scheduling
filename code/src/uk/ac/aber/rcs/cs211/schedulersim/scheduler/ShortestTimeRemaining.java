@@ -28,7 +28,7 @@ public class ShortestTimeRemaining extends AbstractScheduler {
 	 * This will place the job in a position relative to its currently remaining length
 	 * @param job the job to insert into the queue
 	 */
-	public void findPlace(Job job) {
+	private void findPlace(Job job) {
 		int length = job.getLength() - (job.getProgramCounter()-1);
 		for(int i=0; i<=this.numberOfJobs; i++) {
 			if(i == this.numberOfJobs 

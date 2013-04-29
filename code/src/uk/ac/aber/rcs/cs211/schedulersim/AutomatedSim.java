@@ -31,7 +31,7 @@ public class AutomatedSim {
 	 * @param outputName the name of the output file
 	 */
 	public AutomatedSim(String inputName, String outputName) {
-		//This is the numbe of tests we wish to run
+		//This is the number of tests we wish to run
 		int sampleSize = 10000;
 		
 		filename = inputName;
