@@ -20,7 +20,29 @@ public class ShortestTimeRemainingTest {
 	}
 	
 	@Test
-	public void testAddNewJob() {
+	public void testAddNewJobShortestFirst() {
+		//create some jobs
+		Job first = new Job("CPU1:2;4;10");
+		Job second = new Job("CPU2:1;0;12");
+		
+		//add the shorter job first
+		try {
+			str.addNewJob(first);
+			str.addNewJob(second);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
+		//Test if the shortest job is returned first
+		try {
+			Assert.assertTrue(str.getNextJob().equals(first));
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void testAddNewJobShortestSecond() {
 		//create some jobs
 		Job first = new Job("CPU1:2;4;10");
 		Job second = new Job("CPU2:1;0;12");
@@ -29,6 +51,28 @@ public class ShortestTimeRemainingTest {
 		try {
 			str.addNewJob(second);
 			str.addNewJob(first);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
+		//Test if the shortest job is returned first
+		try {
+			Assert.assertTrue(str.getNextJob().equals(first));
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void testAddNewJobEqual() {
+		//create some jobs with equal processing
+		Job first = new Job("CPU1:2;4;10");
+		Job second = new Job("CPU2:1;0;10");
+		
+		//add the longer job first
+		try {
+			str.addNewJob(first);
+			str.addNewJob(second);
 		} catch (SchedulerException e) {
 			fail(e.getMessage());
 		}

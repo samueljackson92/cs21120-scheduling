@@ -1,9 +1,8 @@
 package uk.ac.aber.rcs.cs211.schedulersim.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 import java.util.Arrays;
-import java.util.Random;
 
 import junit.framework.Assert;
 
@@ -49,6 +48,41 @@ public class LotterySchedulerTest {
 		} catch (SchedulerException e) {
 			fail(e.getMessage());
 		}
+
+	}
+	
+	@Test
+	public void testAddNewJobSingleJob() {			
+		//add jobs to the queue
+		try {
+			ls.addNewJob(first);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+	
+		//check they've both been added and that second is now the first job.
+		//seed should insure that it always returns the second job
+		try {
+			Assert.assertTrue(ls.getNextJob().equals(first));
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+
+	}
+	
+	@Test
+	public void testAddNewJobThreeJobs() {			
+		//add jobs to the queue
+		try {
+			ls.addNewJob(third);
+			ls.addNewJob(first);
+			ls.addNewJob(second);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
+		Job[] jobs = {first, third, second};
+		Assert.assertTrue(Arrays.equals(ls.getJobList(), jobs));
 
 	}
 
@@ -113,7 +147,56 @@ public class LotterySchedulerTest {
 			fail(e.getMessage());
 		}
 		
-		//check that the job is now second
+		//check that the job is first
+		//seed should insure this is always the case
+		try {
+			Assert.assertTrue(ls.getNextJob().equals(first));
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void testReturnJobSingleJob() {
+		//add them to the queue
+		try {
+			ls.addNewJob(first);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
+		//try returning the job to the scheduler
+		try {
+			ls.returnJob(first);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
+		//seed should insure this is always the case
+		try {
+			Assert.assertTrue(ls.getNextJob().equals(first));
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+	}
+	
+	@Test
+	public void testReturnJobTwoJobs() {
+		//add them to the queue
+		try {
+			ls.addNewJob(first);
+			ls.addNewJob(second);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
+		//try returning the job to the scheduler
+		try {
+			ls.returnJob(first);
+		} catch (SchedulerException e) {
+			fail(e.getMessage());
+		}
+		
 		//seed should insure this is always the case
 		try {
 			Assert.assertTrue(ls.getNextJob().equals(second));

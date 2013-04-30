@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  29 APR 2013 17:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  30 APR 2013 12:26
 entering extended mode
  %&-line parsing enabled.
 **testing_documentation.tex
@@ -154,24 +154,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 14.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 21.
+
+<img/str_test.png, id=9, 492.84125pt x 370.38374pt>
+File: img/str_test.png Graphic file (type png)
+ <use img/str_test.png>
+<img/rr_test.png, id=11, 493.845pt x 360.34625pt>
+File: img/rr_test.png Graphic file (type png)
+ <use img/rr_test.png>
+[2 <./img/str_test.png>] <img/lott_test.png, id=18, 502.87875pt x 415.5525pt>
+File: img/lott_test.png Graphic file (type png)
+
+<use img/lott_test.png> [3 <./img/rr_test.png> <./img/lott_test.png>]
 (./testing_documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 1352 strings out of 495061
- 17845 string characters out of 1182622
- 69585 words of memory out of 3000000
- 4563 multiletter control sequences out of 15000+50000
+ 1377 strings out of 495061
+ 18239 string characters out of 1182622
+ 71609 words of memory out of 3000000
+ 4583 multiletter control sequences out of 15000+50000
  7756 words of font info for 28 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 25i,6n,32p,402b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,6n,32p,1030b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on testing_documentation.pdf (2 pages, 55763 bytes).
+mi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on testing_documentation.pdf (3 pages, 156087 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

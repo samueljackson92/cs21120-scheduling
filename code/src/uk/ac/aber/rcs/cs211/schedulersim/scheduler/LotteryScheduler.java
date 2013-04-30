@@ -22,16 +22,17 @@ public class LotteryScheduler extends AbstractScheduler {
 	 * The current highest priority of a job in the queue
 	 */
 	private int highestPriority = 0;
-	private long seed = 0;
+	private Random rnd;
 	
 	public LotteryScheduler(long seed) {
 		this();
-		this.seed = seed;
+		this.rnd.setSeed(seed);
 	}
 	
 	public LotteryScheduler() {
 		super();
 		weights = new ArrayList<Double>();
+		rnd = new Random();
 	}
 	
 	/**
@@ -150,7 +151,6 @@ public class LotteryScheduler extends AbstractScheduler {
 	//Code taken from: http://stackoverflow.com/questions/6737283/weighted-randomness-in-java
 	private int pickSlot() {
 		int randomIndex = -1;
-		Random rnd = (seed == 0) ? new Random() : new Random(seed);
 		double random = rnd.nextDouble();
 		for (int i = 0; i < numberOfJobs; ++i)
 		{

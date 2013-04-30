@@ -49,6 +49,7 @@ Because lottery scheduling is non-deterministic it required a different approach
 This section details the outcomes of testing each of the algorithms using the data files outlined in section \ref{methodology} to measure four key attributes important to scheduling algorithms. As mentioned in the preceding section, the values used with lottery scheduling are the mean results of 10,000 tests.
 
 \subsection{Mean Duration}
+\label{results-duration}
 Mean duration is the average amount of time that a scheduled job takes to finish processing. Figure \ref{fig:duration} shows that the mean duration time across all tests and algorithms was fairly consistent, with Shortest Time Remaining (STR) having the lowest mean duration in all tests. Round Robin scheduling showed the worst performance of the four with means durations slight above those of FCFS and Lottery scheduling, both of whom presented mixed results depending on the test.
 
 \begin{figure}[H]
@@ -83,12 +84,12 @@ Interestingly, FCFS had a very high number of context switches on tests 3 and th
 \end{figure}
 
 \subsection{Idle Time}
-Idle time is the number of CPU ticks that occur where there were no jobs pending within the scheduler as they were all either finished on blocked for I/O. Figure \ref{fig:idle-time} shows the total idle times for all tests which clearly shows Round Robin to be the winner with only 5 idle cycles during the high I/O blocking test and 0 idle time for every other test. Lottery scheduling performed reasonably we, while STR and FCFS showed mixed results. Interestingly, STR had no idle time in test 3 while FCFS had no idle time in test 2. STR had a significantly higher idle time during the non blocking I/O test with 31.7\% of its CPU time spent idle. The high I/O blocking test proved to show the largest impact on the idle time compared with the other tests.
+Idle time is the number of CPU ticks that occur where there were no jobs pending within the scheduler as they were all either finished on blocked for I/O. Figure \ref{fig:idle-time} shows the total idle times for all tests as a percentage of the CPU time which clearly shows Round Robin to be the winner with only 5 idle cycles during the high I/O blocking test and 0 idle time for every other test. Lottery scheduling performed reasonably we, while STR and FCFS showed mixed results. Interestingly, STR had no idle time in test 3 while FCFS had no idle time in test 2. STR had a significantly higher idle time during the non blocking I/O test with 31.7\% of its CPU time spent idle. The high I/O blocking test proved to show the largest impact on the idle time compared with the other tests.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{idle_time.png}
-\caption{Total idle time across all tests and algorithms.}
+\includegraphics[width=0.5\textwidth]{idle_time_per.png}
+\caption{Total idle time as a percentage of CPU time across all tests and algorithms.}
 \label{fig:idle-time}
 \end{figure}
 
@@ -122,9 +123,14 @@ When considering the mean time to finish a job, It appears that the Shortest Tim
 
 The second best performing algorithm in this section was First Come, First Served which exhibited only slightly higher mean durations across all tests except in the case of test 3 where is was the worst performer and test 2 where it was narrowly beaten by lottery scheduling. Once again this seems to correlate with predictions. FCFS processes jobs as they arrive, so a queue with only a few short jobs will perform fairly similarly to STR. However, when are a lot of jobs on the queue the algorithms performance begins to deteriorate as longer processes begin to hold the CPU meaning shorter or higher priority jobs get starved of resources. Also, because of the lack of prioritisation, jobs that have been blocked are returned to be back of the queue regardless of the amount of processing left which means nearly complete tasks can be placed right at the back of the queue increasing their duration.
 
-As for the other two tests, figure \ref{fig:duration} shows that Lottery scheduling came a narrow third with Round Robin coming in last. The reason for this is most likely because these two algorithms are more orientated around sharing CPU resources rather than attempting to gain maximum throughput like STR. 
+As for the other two tests, figure \ref{fig:duration} shows that Lottery scheduling came a narrow third with Round Robin coming in last. The reason for this is most likely because these two algorithms are more orientated around sharing CPU resources according to time or priority rather than attempting to gain maximum throughput like STR, making it a more appropriate choice when maximum throughput is not essential.
+
+The data shown in \ref{fig:duration} shows that the difference in mean duration increases between the shorter tests (1 \& 2) and the longer test 3. Looking at the results shown in figure \ref{fig:fstjob-time} we can see that Round Robin had the highest first job finish time. These two points show that the mean duration is affected in Round Robin scheduling because the mean is altered due to jobs generally taking a longer time to finish than with the other scheduling algorithms. It is suggested that because jobs a cycled through in the order they are added, the shorter jobs are not finished as quickly as with other approaches as they are constantly waiting for time on the CPU and hence upping their duration and therefore the mean duration.
+
+Finally, Lottery scheduling shares similar issues with Round Robin in the test of mean duration. Lottery scheduling has a higher mean duration that STR and FCFS because the its approach to scheduling uses randomness and the priority of the job (which has nothing to do with job size) to select which job should get processing time next. This means that, like Round Robin, shorter jobs may not be prioritised CPU time and therefore will generally take longer than with STR. However, unlike Round Robin, CPU is not shared equally among all jobs. This coupled with the element of randomness ensuring that all jobs are potentially allotted processing time makes the likely mean duration of Lottery scheduling difficult to quantify, but generally appears to be slightly quicker than with Round Robin in the average case, but because of Lottery scheduling being non-deterministic the performance may vary per run.
 
 \subsection{Overall Processing Time}
+When comparing the overall processing time taken to complete the tests as seen in figure \ref{fig:cpu-time}, Round Robin appears to be marginally better than the other algorithms where it either equals or surpasses every other scheduler in CPU time.
 
 \section{Conclusions}
 

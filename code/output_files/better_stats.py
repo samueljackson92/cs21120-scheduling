@@ -19,7 +19,8 @@ def makeplot(allData, test1, test2, test3, blocked, no_blocked, no_prior, title,
 	width = 0.8
 
 	ax.set_xlim((-width/2, len(allData)))
-	ax.set_ylim(ymin=0, ymax=max(allData)+20)
+	#ax.set_ylim(ymin=0, ymax=max(allData)+20)
+	ax.set_ylim(ymin=0, ymax=50)
 
 	rects1 = ax.bar(np.arange(len(test1)) * num_tests, test1, bottom=0, width=width, align='edge', color=(.5, .75, 0.5, 1))
 	rects2 = ax.bar(np.arange(len(test2)) * num_tests+width, test2, bottom=0, width=width, align='edge', color=(.75, .75, 0.5, 1))
@@ -100,9 +101,27 @@ no_prior_fst = [11,48,13,44.201]
 
 allFstData = test1_fst+test2_fst+test3_fst+blocked_fst+no_blocked_fst+no_prior_fst
 
-makeplot(allDurData, test1_dur, test2_dur, test3_dur, blocked_dur, no_blocked_dur, no_prior_dur, "Mean Duration", "Mean Duration Time / Units")
-makeplot(allCPUData, test1_cpu,test2_cpu,test3_cpu,blocked_cpu,no_blocked_cpu,no_prior_cpu, "CPU Time", "CPU Time / Units")
-makeplot(allCtextData, test1_ctext,test2_ctext,test3_ctext,blocked_ctext,no_blocked_ctext,no_prior_ctext, "Context Switches", "No. Context Switches")
-makeplot(allIdleData, test1_idle,test2_idle,test3_idle,blocked_idle,no_blocked_idle,no_prior_idle, "Idle Time", "Idle Time / Units")
-makeplot(allFstData, test1_fst,test2_fst,test3_fst,blocked_fst,no_blocked_fst,no_prior_fst, "First Job Finish Time", "Finish Time / Units")
+# makeplot(allDurData, test1_dur, test2_dur, test3_dur, blocked_dur, no_blocked_dur, no_prior_dur, "Mean Duration", "Mean Duration Time / Units")
+# makeplot(allCPUData, test1_cpu,test2_cpu,test3_cpu,blocked_cpu,no_blocked_cpu,no_prior_cpu, "CPU Time", "CPU Time / Units")
+# makeplot(allCtextData, test1_ctext,test2_ctext,test3_ctext,blocked_ctext,no_blocked_ctext,no_prior_ctext, "Context Switches", "No. Context Switches")
+# makeplot(allIdleData, test1_idle,test2_idle,test3_idle,blocked_idle,no_blocked_idle,no_prior_idle, "Idle Time", "Idle Time / Units")
+# makeplot(allFstData, test1_fst,test2_fst,test3_fst,blocked_fst,no_blocked_fst,no_prior_fst, "First Job Finish Time", "Finish Time / Units")
+
+def makePercentages(lst1, lst2):
+	percent = []
+	for i in range(len(lst1)):
+		percent.append(float(lst1[i])/float(lst2[i]) *100)	
+
+	return percent
+
+test1_idleper = makePercentages(test1_idle, test1_cpu)
+test2_idleper = makePercentages(test2_idle, test2_cpu)
+test3_idleper = makePercentages(test3_idle, test3_cpu)
+blocked_idleper = makePercentages(blocked_idle, blocked_cpu)
+no_blocked_idleper = makePercentages(no_blocked_idle, no_blocked_cpu)
+no_prior_idleper = makePercentages(no_prior_idle, no_prior_cpu)
+
+allIdleperData = test1_idleper+test2_idleper+test3_idleper+blocked_idleper+no_blocked_idleper+no_prior_idleper
+
+makeplot(allFstData,test1_idleper,test2_idleper,test3_idleper,blocked_idleper,no_blocked_idleper,no_prior_idleper, "Percent Idle Time", "% Idle")
 
