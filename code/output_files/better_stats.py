@@ -13,23 +13,21 @@ def makeBars(ax, data, offset, width, color, increment):
 	return ax.bar(np.arange(len(data))*offset + increment, data, bottom=0, width=width, align='edge', color=color)
 
 def makeplot(allData, title, y_label):
-	colours = [(.5, .75, 0.5, 1), (.75, .75, 0.5, 1), (.5, .75, 0.75, 1), (.75, .5, 0.75, 1), (.5, .5, 0.5, 1), (.5, .25, 0.5, 1)]
+	colours = [(.5, .75, 0.5, 1), (.75, .75, 0.5, 1), (.5, .75, 0.75, 1), (.75, .5, 0.75, 1)]
 	names = ['STR', 'Round Robin',  'FCFS', 'Lottery Scheduling']
 	test_names = ['Test1', 'Test2', 'Test3', 'Blocked', 'Non Blocked', 'No Priority']
 
 	num_algorithms = len(names)
-	num_tests= len(allData)/num_algorithms
+	num_tests= len(test_names)
 
 	fig = plt.figure(figsize=(13,5))
 	ax = fig.add_subplot(111)
 	width = 0.8
 
 	ax.set_xlim((-width/2, len(allData)))
-	ax.set_ylim(ymin=0, ymax=max(allData)+20)
-	#ax.set_ylim(ymin=0, ymax=50)
+	ax.set_ylim(ymin=0, ymax=max(allData) + max(allData)*0.2)
 
 	allRects = []
-
 	for i in range(num_algorithms):
 		row_data = allData[i::num_algorithms]
 		rects = makeBars(ax, row_data, num_algorithms, width, colours[i], width*i)
@@ -44,7 +42,7 @@ def makeplot(allData, title, y_label):
 
 	ax.legend(allRects, names, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 
-	ax.set_xlabel('Scheduling Algorithm')
+	ax.set_xlabel('Test File')
 	ax.set_ylabel(y_label)
 	ax.set_title(title)
 	fig.subplots_adjust(left=0.1, right=0.75) 

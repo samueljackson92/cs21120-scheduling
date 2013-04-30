@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  30 APR 2013 14:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  1 MAY 2013 00:21
 entering extended mode
  %&-line parsing enabled.
 **assignment2.tex
@@ -238,34 +238,137 @@ G,.JBIG2,.JB2,.eps]
 (/usr/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2009/10/26 v1.1 Configuration of epstopdf for TeX Live
 )))
-(./assignment2.aux)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen123
+\Hy@linkcounter=\count110
+\Hy@pagecounter=\count111
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+))
+\Fld@menulength=\count112
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
+\Field@toks=\toks38
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+
+Package hyperref Warning: Option `pdfpagelabels' is turned off
+(hyperref)                because \thepage is undefined.
+
+\c@Item=\count113
+\c@Hfootnote=\count114
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count115
+) (./assignment2.aux)
 \openout1 = `assignment2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
- (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen123
+\scratchcounter=\count116
+\scratchdimen=\dimen126
 \scratchbox=\box32
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen124
-\MPnumerator=\count114
-\everyMPtoPDFconversion=\toks39
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen127
+\MPnumerator=\count120
+\everyMPtoPDFconversion=\toks40
 )
+Package hyperref Info: Link coloring OFF on input line 7.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count121
+)
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+ (./assignment2.out) (./assignment2.out)
+\@outlinefile=\write3
+\openout3 = `assignment2.out'.
+
+\AtBeginShipoutBox=\box33
 LaTeX Font Info:    Try loading font information for U+msa on input line 20.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -280,97 +383,121 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (1.4122pt too wide) in paragraph at lines 26--29
+Overfull \hbox (1.4122pt too wide) in paragraph at lines 25--28
 \T1/aer/m/n/9 D.4 [\T1/aer/bx/n/9 Operating Sys-tems\T1/aer/m/n/9 ]: Pro-cess M
 an-age-ment--- \T1/aer/m/it/9 Schedul-
- []
-
-<duration.png, id=1, 759.5577pt x 365.6862pt>
-File: duration.png Graphic file (type png)
- <use duration.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 57--58
- [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<cpu_time.png, id=13, 793.5246pt x 377.9721pt>
+<duration.png, id=80, 948.1824pt x 370.0224pt>
+File: duration.png Graphic file (type png)
+ <use duration.png>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
+<cpu_time.png, id=83, 948.1824pt x 370.0224pt>
 File: cpu_time.png Graphic file (type png)
  <use cpu_time.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+Overfull \hbox (12.0pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
 
-Overfull \hbox (9.89563pt too wide) in paragraph at lines 77--78
+Overfull \hbox (9.89563pt too wide) in paragraph at lines 76--77
 []\T1/aer/m/n/9 Interestingly, FCFS had a very high num-ber of con-text switche
 s
  []
 
-<ctex_switches.png, id=14, 774.7344pt x 341.8371pt>
+<ctex_switches.png, id=85, 948.1824pt x 370.0224pt>
 File: ctex_switches.png Graphic file (type png)
  <use ctex_switches.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 81--82
+Overfull \hbox (12.0pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-<idle_time_per.png, id=15, 948.1824pt x 370.0224pt>
+<idle_time_per.png, id=87, 948.1824pt x 370.0224pt>
 File: idle_time_per.png Graphic file (type png)
  <use idle_time_per.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 91--92
+Overfull \hbox (12.0pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
-<fstjob_time.png, id=16, 755.9442pt x 340.3917pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 
+      [2 <./duration.png> <./cpu_time.png> <./ctex_switches.png> <./idle_time_p
+er.png>] <fstjob_time.png, id=101, 948.1824pt x 370.0224pt>
 File: fstjob_time.png Graphic file (type png)
- <use fstjob_time.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 102--103
+
+<use fstjob_time.png>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 101--102
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./duration.png> <./cpu_time.png> <./ctex_switches.png> <./idle_time_per.pn
-g>]
-Overfull \hbox (3.57098pt too wide) in paragraph at lines 113--114
+Overfull \hbox (3.57098pt too wide) in paragraph at lines 112--113
 \T1/aer/m/n/9 Robin schedul-ing had the worst re-sult in this cat-e-gory. Again
 ,
  []
 
 
-Overfull \hbox (4.28957pt too wide) in paragraph at lines 126--127
-[]\T1/aer/m/n/9 As for the other two tests, fig-ure 1[] shows that Lot-tery sch
-edul-
+Overfull \hbox (4.28957pt too wide) in paragraph at lines 125--126
+[]\T1/aer/m/n/9 As for the other two tests, fig-ure []1[] shows that Lot-tery s
+chedul-
  []
 
-[3 <./fstjob_time.png>]
-Overfull \hbox (8.7641pt too wide) in paragraph at lines 138--139
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 
+       [3 <./fstjob_time.png>]pdfTeX warning (ext4): destination with the same 
+identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 F
+       irst Come, First served also appears to be suited to situations that ...
+[4]
+Overfull \hbox (8.7641pt too wide) in paragraph at lines 158--159
 \T1/aer/m/n/9 The au-thor wishes to thank Richard Ship-man (rcs@aber.ac.uk)
  []
 
-(./assignment2.bbl) [4
+(./assignment2.bbl
+LaTeX Font Info:    Try loading font information for T1+aett on input line 6.
+ (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+))pdfTeX warning (ext4): destination with the same identifier (name{page.}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 \end{document}
+                     [5
 
 ] (./assignment2.aux) ) 
 Here is how much of TeX's memory you used:
- 2616 strings out of 495061
- 32092 string characters out of 1182622
- 90845 words of memory out of 3000000
- 5721 multiletter control sequences out of 15000+50000
- 47315 words of font info for 64 fonts, out of 3000000 for 9000
+ 5616 strings out of 495061
+ 77325 string characters out of 1182622
+ 157297 words of memory out of 3000000
+ 8634 multiletter control sequences out of 15000+50000
+ 47803 words of font info for 66 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,10n,26p,929b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,37p,983b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/u
-rw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8
-a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
-Output written on assignment2.pdf (4 pages, 263236 bytes).
+onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/
+uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
+share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
+Output written on assignment2.pdf (5 pages, 278507 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

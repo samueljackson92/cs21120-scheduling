@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{donaldson:scheduling}
+J.~L. Donaldson.
+\newblock Cpu scheduling.
+\newblock \url{http://www.cs.oberlin.edu/~jdonalds/341/lecture08.html}, 2010.
 
 \end{thebibliography}
