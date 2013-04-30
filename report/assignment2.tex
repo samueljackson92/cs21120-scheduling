@@ -130,7 +130,7 @@ The data shown in \ref{fig:duration} shows that the difference in mean duration 
 Finally, Lottery scheduling shares similar issues with Round Robin in the test of mean duration. Lottery scheduling has a higher mean duration that STR and FCFS because the its approach to scheduling uses randomness and the priority of the job (which has nothing to do with job size) to select which job should get processing time next. This means that, like Round Robin, shorter jobs may not be prioritised CPU time and therefore will generally take longer than with STR. However, unlike Round Robin, CPU is not shared equally among all jobs. This coupled with the element of randomness ensuring that all jobs are potentially allotted processing time makes the likely mean duration of Lottery scheduling difficult to quantify, but generally appears to be slightly quicker than with Round Robin in the average case, but because of Lottery scheduling being non-deterministic the performance may vary per run.
 
 \subsection{Overall Processing Time}
-When comparing the overall processing time taken to complete the tests as seen in figure \ref{fig:cpu-time}, Round Robin appears to be marginally better than the other algorithms where it either equals or surpasses every other scheduler in CPU time.
+When comparing the overall processing time taken to complete the tests as seen in figure \ref{fig:cpu-time}, Round Robin appears to be marginally better than the other algorithms where it either equals or surpasses every other scheduler in CPU time. 
 
 \section{Conclusions}
 
