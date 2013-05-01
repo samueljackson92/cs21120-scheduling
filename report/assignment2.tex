@@ -18,6 +18,7 @@ Samuel Jackson\\
 
 \maketitle
 \begin{abstract}
+This document aims to analyse four different scheduling algorithms (namely Shortest Time Remaining, First Come, First Served, Round Robin and Lottery Scheduling) to compare and contrast their performance in a simulated environment and evaluate their strengths and weaknesses. This was done by creating a set of experimental test files containing jobs exhibiting a variety of features likely to be present in a real world scheduling environment and running these on the simulator. The results showed a clear trend towards time slice based schedulers having a higher mean job duration but a low idle time. The reverse appeared to be exhibited by queue based approaches. By analysing the results of these tests it was possible to determine the major differences between the four approaches where a clear trade off between throughput and mean job duration and context switches versus idle time and the possibility of starvation occurred.
 
 \end{abstract}
 
@@ -152,7 +153,24 @@ Round Robin scheduling has a slower mean job duration as jobs spend longer waiti
 
 An interesting area for further investigation with Round Robin scheduling would be to up the amount of CPU cycles a job gets before it is swapped to the back of the queue. This would produce a drop in the number of context switches the scheduler has to make thereby reducing the overhead. However, but allowing multiple CPU cycles it could cause scheduler to begin to perform more like FCFS because (if the time slice is high enough) the whole job could finish before being swapped out meaning that the first job in the queue will generally be the first to finish. Therefore the key to  the optimum performance of a Round Robin algorithm is likely to be finding the "sweet spot" that minimising the number of context switches while still providing jobs with fair access to processing time.
 
-Lottery scheduling is the only scheduling approach of the three that uses the priority supplied with each test file to select which job should be processed next. The implementation used here is weighted meaning that more important jobs are more likely to be selected. 
+Lottery scheduling is the only scheduling approach of the three that uses the priority supplied with each test file to select which job should be processed next. The implementation used here is weighted meaning that more important jobs are more likely to be selected. This implementation is also pre-emptive, meaning that a lottery is run every time a job is added and also when a job is returned meaning that it behaves (as shown in the test data) generally like Round Robin. The weighting means that less context switches are made and therefore jobs appear to get a higher slice of CPU time in proportion to there weighting.
+
+However, lottery scheduling can be made to work like other scheduling algorithms depending on how it is tuned. For example, it could easily be make to work in a similar fashion to Shortest Time Remaining if the weights of the jobs were based on the amount of time left before the job completes but would not be exactly the same because there is still a chance that job with a longer time could jump to the front. Therefore while the exact throughput speed offered with STR could never be achieved, Lottery scheduling can be made to approximate closely to STR but with the added benefit of solving the issue of starvation as there is always a chance jobs with higher time remaining to taking over. This will of course mean that it would also still have a higher context switching overhead than STR.
+
+The performance of Lottery scheduling can vary between runs. This means that while it can be made to approximate other algorithms the outcome of scheduling can be highly variable. In the data presented in section \ref{results} the average result was presented, but the actual value can vary depending on the the random value generated. Therefore while the algorithm will generally run within a couple of cycles of the mean value it can be much worse or much better. This means that Lottery scheduling may not be the best approach to take when consistent performance is key to scheduling success. It is also worth noting that the implementation used here relies on the Java's own pseudo-random number generator and so may not produce truly random results over time. However for simple purposes a pseudo-random generator should give sufficiently random results.
+
+\section{Executive Summary}
+In summary of this document, it can be seen that there are a variety of different approaches that can be taken to the problem of scheduling. Each of the algorithms in this document aim to handle factors affecting the performance of scheduling in different ways. 
+
+Round Robin cycles through the jobs to give each job a slice of time on the CPU. In doing this Round Robin minimise the amount of time that it spends being idle, but at the cost of a slightly higher mean job duration and a higher number of context switches.
+
+Similarly the Lottery scheduling implementation performed in a way that was similar to Round Robin, but because of weights allocated to higher priority jobs had a lower number of context switches and was slightly faster than Round Robin. 
+
+In contrast Shortest Time Remaining showed a high throughput and hence a slightly lower mean duration but its overall processing time proved to not be significantly better than the other schedulers due to long periods spent being idle. STR also exhibited a much lower number of context switches and hence would have a lower computation overhead in a real world application.
+
+First Come, First Served generally performed like Shortest Time Remaining but generally had a slower mean duration as longer processes tended to hold the CPU because of the lack of job prioritisation. The lack of prioritisation caused it to have idle times that were similar in scale to STR as well as a smaller number of context switches.
+
+In conclusion this document has shown that there is a trade off between the average job duration and the number of context switches made against the amount of time spent being idle and the possibility of process starvation. The choice of scheduler relies heavily on the amount to which these factors affect the larger system as a whole.
 
 \section{Acknowledgements}
 The author wishes to thank Richard Shipman (rcs@aber.ac.uk) for providing the supporting simulation code and GUI.
@@ -160,7 +178,7 @@ The author wishes to thank Richard Shipman (rcs@aber.ac.uk) for providing the su
 \bibliographystyle{abbrv}
  % sigproc.bib is the name of the Bibliography 
 \bibliography{sigproc}
-\appendix
+\nocite{*}
 
 \balancecolumns
 \end{document}

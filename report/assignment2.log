@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  1 MAY 2013 00:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  1 MAY 2013 15:28
 entering extended mode
  %&-line parsing enabled.
 **assignment2.tex
@@ -383,7 +383,7 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (1.4122pt too wide) in paragraph at lines 25--28
+Overfull \hbox (1.4122pt too wide) in paragraph at lines 26--29
 \T1/aer/m/n/9 D.4 [\T1/aer/bx/n/9 Operating Sys-tems\T1/aer/m/n/9 ]: Pro-cess M
 an-age-ment--- \T1/aer/m/it/9 Schedul-
  []
@@ -392,37 +392,40 @@ an-age-ment--- \T1/aer/m/it/9 Schedul-
 
 
 ]
-<duration.png, id=80, 948.1824pt x 370.0224pt>
+<duration.png, id=84, 948.1824pt x 370.0224pt>
 File: duration.png Graphic file (type png)
  <use duration.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 56--57
+Overfull \hbox (12.0pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
-<cpu_time.png, id=83, 948.1824pt x 370.0224pt>
+<cpu_time.png, id=87, 948.1824pt x 370.0224pt>
 File: cpu_time.png Graphic file (type png)
  <use cpu_time.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 68--69
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
 
-Overfull \hbox (9.89563pt too wide) in paragraph at lines 76--77
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+
+Overfull \hbox (9.89563pt too wide) in paragraph at lines 77--78
 []\T1/aer/m/n/9 Interestingly, FCFS had a very high num-ber of con-text switche
 s
  []
 
-<ctex_switches.png, id=85, 948.1824pt x 370.0224pt>
+<ctex_switches.png, id=89, 948.1824pt x 370.0224pt>
 File: ctex_switches.png Graphic file (type png)
  <use ctex_switches.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 80--81
+Overfull \hbox (12.0pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
-<idle_time_per.png, id=87, 948.1824pt x 370.0224pt>
+<idle_time_per.png, id=91, 948.1824pt x 370.0224pt>
 File: idle_time_per.png Graphic file (type png)
  <use idle_time_per.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 90--91
+Overfull \hbox (12.0pt too wide) in paragraph at lines 91--92
  [][] 
  []
 
@@ -430,24 +433,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [2 <./duration.png> <./cpu_time.png> <./ctex_switches.png> <./idle_time_p
-er.png>] <fstjob_time.png, id=101, 948.1824pt x 370.0224pt>
+l.95 
+      [2 <./duration.png> <./cpu_time.png> <./ctex_switches.png>]
+<fstjob_time.png, id=103, 948.1824pt x 370.0224pt>
 File: fstjob_time.png Graphic file (type png)
-
-<use fstjob_time.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 101--102
+ <use fstjob_time.png>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 102--103
  [][] 
  []
 
 
-Overfull \hbox (3.57098pt too wide) in paragraph at lines 112--113
+Overfull \hbox (3.57098pt too wide) in paragraph at lines 113--114
 \T1/aer/m/n/9 Robin schedul-ing had the worst re-sult in this cat-e-gory. Again
 ,
  []
 
-
-Overfull \hbox (4.28957pt too wide) in paragraph at lines 125--126
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 
+       [3 <./idle_time_per.png> <./fstjob_time.png>]
+Overfull \hbox (4.28957pt too wide) in paragraph at lines 126--127
 []\T1/aer/m/n/9 As for the other two tests, fig-ure []1[] shows that Lot-tery s
 chedul-
  []
@@ -456,38 +463,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 
-       [3 <./fstjob_time.png>]pdfTeX warning (ext4): destination with the same 
-identifier (name{page.}) has been already used, duplicate ignored
+l.147 
+       [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.05157pt too wide) in paragraph at lines 169--170
+[]\T1/aer/m/n/9 In con-trast Short-est Time Re-main-ing showed a high through-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 F
-       irst Come, First served also appears to be suited to situations that ...
-[4]
-Overfull \hbox (8.7641pt too wide) in paragraph at lines 158--159
+l.172 
+       [5]
+Overfull \hbox (8.7641pt too wide) in paragraph at lines 176--177
 \T1/aer/m/n/9 The au-thor wishes to thank Richard Ship-man (rcs@aber.ac.uk)
  []
 
 (./assignment2.bbl
-LaTeX Font Info:    Try loading font information for T1+aett on input line 6.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 12.
  (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ))pdfTeX warning (ext4): destination with the same identifier (name{page.}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \end{document}
-                     [5
+l.184 \end{document}
+                     [6
 
 ] (./assignment2.aux) ) 
 Here is how much of TeX's memory you used:
- 5616 strings out of 495061
- 77325 string characters out of 1182622
- 157297 words of memory out of 3000000
- 8634 multiletter control sequences out of 15000+50000
+ 5619 strings out of 495061
+ 77370 string characters out of 1182622
+ 157333 words of memory out of 3000000
+ 8636 multiletter control sequences out of 15000+50000
  47803 words of font info for 66 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,10n,37p,983b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,37p,983b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
@@ -495,9 +509,9 @@ onts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/
 uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
-Output written on assignment2.pdf (5 pages, 278507 bytes).
+Output written on assignment2.pdf (6 pages, 286175 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{petrou:lottery}
+J.~W.~M. David~Petrou and G.~A. Gibson.
+\newblock Implementing lottery scheduling: Matching the specializations in
+  traditional schedulers.
+\newblock {\em USENIX}, June 1999.
+
 \bibitem{donaldson:scheduling}
 J.~L. Donaldson.
 \newblock Cpu scheduling.
