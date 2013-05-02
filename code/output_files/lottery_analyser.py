@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 ##############################################
-# stats.py
-# Run some data analysis on the results of the 
-# scheduling algorithms
+# lottery_analyser.py
+# Analyse the data from the generated CSV files
+# to fine the average of the values.
 # Author: 	Samuel Jackson (slj11@aber.ac.uk)
 # Date:		21/4/13
 ##############################################

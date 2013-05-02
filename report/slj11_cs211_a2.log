@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  2 MAY 2013 17:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  2 MAY 2013 17:34
 entering extended mode
  %&-line parsing enabled.
-**assignment2.tex
-(./assignment2.tex
+**slj11_cs211_a2.tex
+(./slj11_cs211_a2.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -332,8 +332,8 @@ Package: flushend 1997/10/01
 \atColsBreak=\toks39
 \@extra@skip=\dimen126
 \@nd@page@rule=\dimen127
-) (./assignment2.aux)
-\openout1 = `assignment2.aux'.
+) (./slj11_cs211_a2.aux)
+\openout1 = `slj11_cs211_a2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -349,8 +349,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen128
@@ -374,13 +373,15 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
- (./assignment2.out) (./assignment2.out)
+
+(./slj11_cs211_a2.out) (./slj11_cs211_a2.out)
 \@outlinefile=\write3
-\openout3 = `assignment2.out'.
+\openout3 = `slj11_cs211_a2.out'.
 
 \AtBeginShipoutBox=\box37
 LaTeX Font Info:    Try loading font information for U+msa on input line 21.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 21.
@@ -528,7 +529,7 @@ Overfull \hbox (8.7641pt too wide) in paragraph at lines 190--191
 \T1/aer/m/n/9 The au-thor wishes to thank Richard Ship-man (rcs@aber.ac.uk)
  []
 
-(./assignment2.bbl
+(./slj11_cs211_a2.bbl
 LaTeX Font Info:    Try loading font information for T1+aett on input line 12.
  (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -545,23 +546,24 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.198 \end{document}
-                     [6] (./assignment2.aux) ) 
+                     [6] (./slj11_cs211_a2.aux) ) 
 Here is how much of TeX's memory you used:
  5655 strings out of 495061
- 78003 string characters out of 1182622
+ 78048 string characters out of 1182622
  158962 words of memory out of 3000000
  8664 multiletter control sequences out of 15000+50000
  47803 words of font info for 66 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,10n,37p,1191b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/e
-nc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fo
-nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/hel
-vetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
-Output written on assignment2.pdf (6 pages, 320139 bytes).
+ 41i,10n,37p,1194b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/font
+s/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive
+/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
+
+Output written on slj11_cs211_a2.pdf (6 pages, 320139 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)

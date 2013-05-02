@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+##############################################
+# graph.py
+# Python script to generate the graphs from
+# the collected data.
+# Author: 	Samuel Jackson (slj11@aber.ac.uk)
+# Date:		23/4/13
+##############################################
+
 import matplotlib.pyplot as plt
 import numpy as np
 

@@ -1,5 +1,5 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
-The top-level auxiliary file: assignment2.aux
+The top-level auxiliary file: slj11_cs211_a2.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
 Name 1 in "David Petrou, John W. Milford, and Garth A. Gibson" has a comma at the end for entry petrou:lottery
@@ -8,7 +8,7 @@ Name 1 in "David Petrou, John W. Milford, and Garth A. Gibson" has a comma at th
 while executing---line 1090 of file abbrv.bst
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            512 strings with 4130 characters,
+            512 strings with 4136 characters,
 and the built_in function-call counts, 678 in all, are:
 = -- 63
 > -- 27
