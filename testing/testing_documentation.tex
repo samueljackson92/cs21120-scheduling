@@ -17,13 +17,13 @@
 \section{Testing the Schedulers}
 This document outlines the testing used with the scheduling algorithms in this assignment to ensure correct performance. To test the scheduler implementations a set of JUnit tests have been created and are available in a separate package called "Tests" located with the sources code. The rest of this document provides evidence of carrying out these tests on the algorithms.
 
-\subsection{Shortest Time Remaining}
-Shortest Time Remaining orders jobs according to the amount of processing they still need to do by when a job is added to the queue or and when it is returned to the scheduler after some processing. In the under lying code, both of these methods call the same method ($findPlace$) in order to place a job in the correct place on the queue. In order to test that the scheduler is working correctly I created JUnit tests that added the shortest job first, the shortest job second and two equally sized jobs to the queue. In each of these tests I then check that the correct job is returned from the $getNextJob$ method. I have also provided a test for the $returnJob$. As the code is almost identical underneath the hood as the $addNewJob$ I have only done a single test to check that a job that had a higher time remaining but now has a lower time remaining is moved further up the queue. Below is a screen image showing the the Shortest Time Remaining scheduler passing all JUnit tests.
+\subsection{Shortest Remaining Time}
+Shortest Remaining Time orders jobs according to the amount of processing they still need to do by when a job is added to the queue or and when it is returned to the scheduler after some processing. In the under lying code, both of these methods call the same method ($findPlace$) in order to place a job in the correct place on the queue. In order to test that the scheduler is working correctly I created JUnit tests that added the shortest job first, the shortest job second and two equally sized jobs to the queue. In each of these tests I then check that the correct job is returned from the $getNextJob$ method. I have also provided a test for the $returnJob$. As the code is almost identical underneath the hood as the $addNewJob$ I have only done a single test to check that a job that had a higher time remaining but now has a lower time remaining is moved further up the queue. Below is a screen image showing the the Shortest Remaining Time scheduler passing all JUnit tests.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{img/str_test.png}
-\caption{Shortest Time Remaining passing all JUnit tests.}
+\caption{Shortest Remaining Time passing all JUnit tests.}
 \label{fig:str-test}
 \end{figure}
 
