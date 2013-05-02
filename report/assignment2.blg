@@ -6,45 +6,45 @@ Name 1 in "David Petrou, John W. Milford, and Garth A. Gibson" has a comma at th
 while executing---line 1049 of file abbrv.bst
 Name 1 in "David Petrou, John W. Milford, and Garth A. Gibson" has a comma at the end for entry petrou:lottery
 while executing---line 1090 of file abbrv.bst
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            507 strings with 3994 characters,
-and the built_in function-call counts, 470 in all, are:
-= -- 43
-> -- 20
+            512 strings with 4130 characters,
+and the built_in function-call counts, 678 in all, are:
+= -- 63
+> -- 27
 < -- 0
-+ -- 8
-- -- 6
-* -- 22
-:= -- 89
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 9
++ -- 11
+- -- 8
+* -- 28
+:= -- 124
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 17
-empty$ -- 40
-format.name$ -- 6
-if$ -- 95
+cite$ -- 3
+duplicate$ -- 24
+empty$ -- 62
+format.name$ -- 8
+if$ -- 141
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 3
 missing$ -- 1
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 13
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 10
 quote$ -- 0
-skip$ -- 15
+skip$ -- 22
 stack$ -- 0
-substring$ -- 10
-swap$ -- 2
+substring$ -- 15
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 12
 warning$ -- 0
-while$ -- 4
-width$ -- 3
-write$ -- 22
+while$ -- 6
+width$ -- 4
+write$ -- 32
 (There were 2 error messages)

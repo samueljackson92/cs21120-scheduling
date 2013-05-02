@@ -36,13 +36,15 @@ meanIdleTime = 0
 
 flatdat = [item for sublist in dat for item in sublist]
 
-fstJob = flatdat[::5]
-duration = flatdat[1::5]
-cputime = flatdat[2::5]
-contextSwitches = flatdat[3::5]
-idleTime = flatdat[4::5]
+fstJobDuration = flatdat[::6]
+fstJobFinish = flatdat[1::6]
+duration = flatdat[2::6]
+cputime = flatdat[3::6]
+contextSwitches = flatdat[4::6]
+idleTime = flatdat[5::6]
 
-meanFstTime = sum(fstJob) / numTests
+meanFstFinish = sum(fstJobFinish) / numTests
+meanFstTime = sum(fstJobDuration) / numTests
 meandur = sum(duration) / numTests
 meanCPUTime = sum(cputime) / numTests
 meanIdleTime = sum(idleTime) / numTests
@@ -67,7 +69,9 @@ def histo(data, title, subtitle):
 	plt.show()
 
 
-print "Average First Job Finishing Time: ", meanFstTime
+print "Average First Job Finish Time: ", meanFstFinish
+
+print "Average First Job Duration Time: ", meanFstTime
 
 print "Mean Total Duration: ", meandur
 #histo(duration, 'Total Duration', 'Mean Total Duration')

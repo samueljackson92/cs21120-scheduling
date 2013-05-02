@@ -111,7 +111,11 @@ public class AutomatedSim {
 			total+=temp.getElapsedDuration();
 		}
 		
-		//shortest job
+		//first job duration
+		retval.append(l[0].getElapsedDuration());
+		retval.append(",");
+		
+		//first job finish time
 		retval.append(l[0].getFinishTime());
 		retval.append(",");
 		

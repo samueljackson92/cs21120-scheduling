@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  29 APR 2013 16:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  1 MAY 2013 17:12
 entering extended mode
  %&-line parsing enabled.
 **design_description.tex
@@ -165,7 +165,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<class_diagram.png, id=9, 1012.78375pt x 645.41125pt>
+<class_diagram.png, id=9, 1012.78375pt x 661.47125pt>
 File: class_diagram.png Graphic file (type png)
  <use class_diagram.png>
 [2
@@ -194,7 +194,7 @@ mf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/f
 onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmtt12.pfb>
-Output written on design_description.pdf (3 pages, 166956 bytes).
+Output written on design_description.pdf (3 pages, 167702 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

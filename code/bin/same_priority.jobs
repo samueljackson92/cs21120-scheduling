@@ -1,0 +1,11 @@
+# file for Scheduler simulator
+# Includes jobs where all the priorities are the same
+# Modified from Test.jobs
+# Author: slj11
+# process name:priority;start time;cycles on cpu, cycles blocked, cycles on cpu...
+CPU1:1;4;10
+CPU2:1;0;12
+MIXED1:1;0;5,2,2,2,6
+IO1:1;0;1,5,2,5,1,6,3
+CPU3:1;0;8,3,8
+

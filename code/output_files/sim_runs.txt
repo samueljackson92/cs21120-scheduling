@@ -5,7 +5,7 @@
 ##################################################################################
 
 Simulator run Sat Apr 27 17:01:55 BST 2013
-uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestRemainingTime
 DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test.jobs
 CPU1:2	11
 CPU2:1	24
@@ -16,6 +16,7 @@ Mean elapsed duration	44
 Total CPU time	77
 Total Context Switches	14
 Total Idle time	8
+First Job Finish Time: 15
 
 Simulator run Thu Apr 25 20:12:35 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
@@ -29,6 +30,7 @@ Mean elapsed duration	60
 Total CPU time	69
 Total Context Switches	68
 Total Idle time	0
+First Job Finish Time: 52
 
 Simulator run Thu Apr 25 20:13:30 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
@@ -42,20 +44,22 @@ Mean elapsed duration	48
 Total CPU time	75
 Total Context Switches	10
 Total Idle time	6
+First Job Finish Time: 13
 
 Lottery Scheduling:
-Average First Job Finishing Time:  37.3631
-Mean Total Duration:  55.355
-Mean CPU Time:  72.1559
-Mean Context Switches:  48.452
-Mean Idle Time:  3.1559
+Average First Job Finish Time:  37.3673
+Average First Job Duration Time:  36.6029
+Mean Total Duration:  55.3716
+Mean CPU Time:  72.0944
+Mean Context Switches:  48.519
+Mean Idle Time:  3.0944
 
 
 ##################################################################################
 # Test2.jobs
 ##################################################################################
 Simulator run Sat Apr 27 17:02:19 BST 2013
-uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestRemainingTime
 DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test2.jobs
 INTER:1	15
 CPU1:3	20
@@ -66,6 +70,7 @@ Mean elapsed duration	44
 Total CPU time	79
 Total Context Switches	20
 Total Idle time	10
+First Job Finish Time: 15
 
 Simulator run Sat Apr 27 13:00:32 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
@@ -79,6 +84,7 @@ Mean elapsed duration	59
 Total CPU time	69
 Total Context Switches	64
 Total Idle time	0
+First Job Finish Time: 52
 
 Simulator run Sat Apr 27 13:00:05 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
@@ -92,20 +98,22 @@ Mean elapsed duration	54
 Total CPU time	69
 Total Context Switches	15
 Total Idle time	0
+First Job Finish Time: 28
 
 Lottery Scheduling:
-Average First Job Finishing Time:  35.0107
-Mean Total Duration:  52.7214
-Mean CPU Time:  70.7239
-Mean Context Switches:  46.5125
-Mean Idle Time:  1.7239
+Average First Job Finish Time:  35.0173
+Average First Job Duration Time:  34.9245
+Mean Total Duration:  52.7515
+Mean CPU Time:  70.7122
+Mean Context Switches:  46.4977
+Mean Idle Time:  1.7122
 
 
 ##################################################################################
 # Test3.jobs
 ##################################################################################
 Simulator run Sat Apr 27 17:03:21 BST 2013
-uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestRemainingTime
 DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/Test3.jobs
 INTER:1	15
 MIXED1:2	32
@@ -120,6 +128,7 @@ Mean elapsed duration	91
 Total CPU time	182
 Total Context Switches	43
 Total Idle time	0
+First Job Finish Time: 15
 
 Simulator run Sat Apr 27 13:01:41 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
@@ -137,6 +146,7 @@ Mean elapsed duration	133
 Total CPU time	182
 Total Context Switches	172
 Total Idle time	0
+First Job Finish Time: 92
 
 Simulator run Sat Apr 27 13:02:09 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
@@ -154,20 +164,22 @@ Mean elapsed duration	134
 Total CPU time	191
 Total Context Switches	26
 Total Idle time	9
+First Job Finish Time: 45
 
 Lottery Scheduling:
-Average First Job Finishing Time:  59.3119
-Mean Total Duration:  122.6082
-Mean CPU Time:  182.4428
-Mean Context Switches:  140.8237
-Mean Idle Time:  0.4428
+Average First Job Finish Time:  59.2033
+Average First Job Duration Time:  59.2018
+Mean Total Duration:  122.587
+Mean CPU Time:  182.4386
+Mean Context Switches:  140.783
+Mean Idle Time:  0.4386
 
 
 ##################################################################################
 # same_priority.jobs
 ##################################################################################
 Simulator run Sat Apr 27 17:04:04 BST 2013
-uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestRemainingTime
 DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/same_priority.jobs
 CPU1:1	11
 CPU2:1	24
@@ -178,6 +190,7 @@ Mean elapsed duration	44
 Total CPU time	77
 Total Context Switches	14
 Total Idle time	8
+First Job Finish Time: 15
 
 Simulator run Sat Apr 27 13:10:22 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
@@ -191,6 +204,7 @@ Mean elapsed duration	60
 Total CPU time	69
 Total Context Switches	68
 Total Idle time	0
+First Job Finish Time: 52
 
 Simulator run Sat Apr 27 13:10:50 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
@@ -204,21 +218,22 @@ Mean elapsed duration	48
 Total CPU time	75
 Total Context Switches	10
 Total Idle time	6
+First Job Finish Time: 13
 
 Lottery Scheduling:
-Average First Job Finishing Time:  44.201
-Mean Total Duration:  57.3252
-Mean CPU Time:  69.3116
-Mean Context Switches:  51.508
-Mean Idle Time:  0.3116
-
+Average First Job Finish Time:  44.2713
+Average First Job Duration Time:  42.3337
+Mean Total Duration:  57.3909
+Mean CPU Time:  69.3216
+Mean Context Switches:  51.6611
+Mean Idle Time:  0.3216
 
 
 ##################################################################################
 # blocked.jobs
 ##################################################################################
 Simulator run Sat Apr 27 17:04:28 BST 2013
-uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestRemainingTime
 DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/blocked.jobs
 CPU1:2	11
 CPU2:1	24
@@ -229,6 +244,7 @@ Mean elapsed duration	55
 Total CPU time	101
 Total Context Switches	12
 Total Idle time	32
+First Job Finish Time: 15
 
 Simulator run Sat Apr 27 13:08:00 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
@@ -242,6 +258,7 @@ Mean elapsed duration	59
 Total CPU time	74
 Total Context Switches	55
 Total Idle time	5
+First Job Finish Time: 45
 
 Simulator run Sat Apr 27 13:09:03 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
@@ -255,20 +272,21 @@ Mean elapsed duration	52
 Total CPU time	88
 Total Context Switches	10
 Total Idle time	19
+First Job Finish Time: 13
 
 Lottery Scheduling:
-Average First Job Finishing Time:  34.351
-Mean Total Duration:  58.8188
-Mean CPU Time:  85.1865
-Mean Context Switches:  40.9425
-Mean Idle Time:  16.1865
-
+Average First Job Finish Time:  34.4534
+Average First Job Duration Time:  33.7594
+Mean Total Duration:  58.8708
+Mean CPU Time:  85.2827
+Mean Context Switches:  40.9669
+Mean Idle Time:  16.2827
 
 ##################################################################################
 # no_blocked.jobs
 ##################################################################################
 Simulator run Sat Apr 27 17:05:02 BST 2013
-uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestJobNext
+uk.ac.aber.rcs.cs211.schedulersim.scheduler.ShortestRemainingTime
 DataFile name:	/home/samuel/Dropbox/Aber/uni_docs/DataStructs/cs21120-scheduling/code/src/no_blocked.jobs
 CPU1:2	11
 MIXED1:2	33
@@ -279,6 +297,7 @@ Mean elapsed duration	57
 Total CPU time	110
 Total Context Switches	8
 Total Idle time	0
+First Job Finish Time: 15
 
 Simulator run Sat Apr 27 13:05:01 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.RoundRobin
@@ -292,6 +311,7 @@ Mean elapsed duration	91
 Total CPU time	110
 Total Context Switches	105
 Total Idle time	0
+First Job Finish Time: 59
 
 Simulator run Sat Apr 27 13:04:35 BST 2013
 uk.ac.aber.rcs.cs211.schedulersim.scheduler.FirstComeFirstServed
@@ -305,10 +325,12 @@ Mean elapsed duration	69
 Total CPU time	110
 Total Context Switches	5
 Total Idle time	0
+First Job Finish Time: 26
 
 Lottery Scheduling:
-Average First Job Finishing Time:  57.2704
-Mean Total Duration:  86.5511
+Average First Job Finish Time:  56.9598
+Average First Job Duration Time:  53.5286
+Mean Total Duration:  86.48
 Mean CPU Time:  110.0
-Mean Context Switches:  75.5918
+Mean Context Switches:  75.6119
 Mean Idle Time:  0.0
