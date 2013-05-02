@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  2 MAY 2013 17:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  2 MAY 2013 17:17
 entering extended mode
  %&-line parsing enabled.
 **assignment2.tex
@@ -429,7 +429,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6978) has occurred while \output is active []
 
 
 Overfull \hbox (9.89563pt too wide) in paragraph at lines 78--79
@@ -561,7 +561,7 @@ r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/hel
 vetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
-Output written on assignment2.pdf (6 pages, 320035 bytes).
+Output written on assignment2.pdf (6 pages, 320139 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
